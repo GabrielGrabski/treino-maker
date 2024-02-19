@@ -1,3 +1,15 @@
 .container {
   display: flex;
 }
+
+.childrenContainer {
+  display: flex;
+  flex-direction: column;
+  /* padding: 2rem 4rem; */
+  background-color: #cdcdcd31;
+  width: 80%;
+  height: 40rem;
+  margin: auto;
+  box-shadow: 2px 4px 10px #a6a6a6;
+  border-radius: 1rem;
+}

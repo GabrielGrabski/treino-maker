@@ -8,8 +8,7 @@ import { MdAccountCircle } from "react-icons/md";
 export const Header = () => {
   const { isAuthenticated } = useContext(AuthContext);
 
-  useEffect(() => {
-  }, []);
+  useEffect(() => {}, []);
 
   return (
     <header>
@@ -34,10 +33,13 @@ export const Header = () => {
 
           {isAuthenticated && (
             <>
-              <Link className={styles.link} to="/account">
+              <Link
+                className={`${styles.link} ${styles.navLink}`}
+                to="/account"
+              >
                 Conta
+                <MdAccountCircle color="#fff" size={20} />
               </Link>
-              <MdAccountCircle color="#fff" size={20} />
             </>
           )}
         </nav>

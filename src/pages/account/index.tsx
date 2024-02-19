@@ -4,10 +4,11 @@ import styles from "./account.module.css";
 export const Account = () => {
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
+    alert("Cadastro alterado com sucesso!");
   };
 
   return (
-    <div className={styles.container}>
+    <div>
       <h1>Configurações de conta</h1>
       <div className={styles.formContainer}>
         <form className={styles.form} onSubmit={handleSubmit}>

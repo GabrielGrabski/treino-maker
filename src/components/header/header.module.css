@@ -33,3 +33,17 @@ img {
   width: 14rem;
   padding: 2rem;
 }
+
+.navLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  transition: all 0.5s;
+}
+
+.navLink:hover {
+  background-color: #717171;
+}

@@ -10,7 +10,7 @@ export const SideBarLayout = ({ children }: SideBarProps) => {
   return (
     <div className={styles.container}>
       <SideBar />
-      {children}
+      <div className={styles.childrenContainer}> {children} </div>
     </div>
   );
 };
