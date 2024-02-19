@@ -22,7 +22,7 @@ export const Account = () => {
             <input type="password" placeholder="Nova Senha" />
           </div>
 
-          <button type="submit">Salvar Alterações</button>
+          <button type="submit" className={styles.btn}>Salvar Alterações</button>
         </form>
       </div>
     </div>

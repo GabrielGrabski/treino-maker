@@ -65,7 +65,7 @@ export const Login = () => {
             </span>
           )}
 
-          <button className="btn-login" type="submit">
+          <button className={styles.btnLogin} type="submit">
             Entrar
           </button>
         </form>
