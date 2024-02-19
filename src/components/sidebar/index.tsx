@@ -30,7 +30,7 @@ export const SideBar = () => {
           </Link>
           <Link className={styles.link} to="/settings">
             <li className={styles.item}>
-              Configuração
+              Configurações
               <IoMdSettings color="#404040" size={20} />
             </li>
           </Link>

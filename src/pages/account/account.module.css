@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4rem;
+  background-color: #cdcdcd31;
+  width: 83vw;
+  height: 83vh;
+  margin: auto;
+  box-shadow: 2px 4px 10px #a6a6a6;
+  border-radius: 1rem;
+}
+
+h1 {
+  padding: 2rem 0;
+  align-self: flex-start;
+}
+
+.formContainer {
+  margin: 8rem auto;
+  height: 100%;
+}
+
+.formControl {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:hover {
+  transform: scale(1);
+}

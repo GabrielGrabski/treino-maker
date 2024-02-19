@@ -25,7 +25,7 @@ export const Home = () => {
 
         <Link to="/settings" className={styles.link}>
           <HomeCard
-            name="Configuração"
+            name="Configurações"
             icon={<IoMdSettings color="#404040" size={20} />}
           />
         </Link>
