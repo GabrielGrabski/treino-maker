@@ -18,7 +18,7 @@
   gap: 1rem;
   box-shadow: 2px 4px 8px #929292;
   border-radius: 1rem;
-  background-color: #ffffff;
+  background-color: #ede2db;
 }
 
 form {
@@ -29,8 +29,8 @@ form {
   gap: 0.5rem;
 }
 
-input,
-button {
+.input,
+.button {
   padding: 0.5rem;
   width: 18rem;
   border: none;
@@ -46,7 +46,6 @@ button {
 
 .invalidMessage {
   font-size: 1rem;
-  /* align-self: flex-start; */
   color: rgb(255, 108, 108);
   margin-top: 0.5rem;
 }

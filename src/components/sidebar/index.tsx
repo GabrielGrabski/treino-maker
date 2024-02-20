@@ -13,25 +13,25 @@ export const SideBar = () => {
           <Link className={styles.link} to="/">
             <li className={styles.item}>
               Home
-              <IoHomeSharp color="#404040" size={20} />
+              <IoHomeSharp color="#fff" size={20} />
             </li>
           </Link>
           <Link className={styles.link} to="/workout">
             <li className={styles.item}>
               Treinos
-              <CgGym color="#404040" size={20} />
+              <CgGym color="#fff" size={20} />
             </li>
           </Link>
           <Link className={styles.link} to="/categories">
             <li className={styles.item}>
               Categorias
-              <TbCategoryFilled color="#404040" size={20} />
+              <TbCategoryFilled color="#fff" size={20} />
             </li>
           </Link>
           <Link className={styles.link} to="/settings">
             <li className={styles.item}>
               Configurações
-              <IoMdSettings color="#404040" size={20} />
+              <IoMdSettings color="#fff" size={20} />
             </li>
           </Link>
         </ul>

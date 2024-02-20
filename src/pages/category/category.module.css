@@ -1,3 +1,74 @@
 .container {
-  
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.formBox {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.input {
+  padding: 0.9rem;
+  width: 40%;
+  border: none;
+  outline: 1px solid rgb(165, 165, 165);
+  border-radius: 1rem;
+}
+
+.btn {
+  padding: 0.9rem;
+  margin-top: 1rem;
+  width: 20%;
+  border: none;
+  outline: 2px solid rgb(255, 255, 255);
+  background-color: rgb(20, 122, 255);
+  color: #fff;
+  font-weight: bold;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: rgb(16, 94, 198);
+}
+
+.categories {
+  width: 50rem;
+  height: 15rem;
+  margin: auto;
+  border-radius: 1rem;
+  background-color: rgb(153, 153, 153);
+  color: #fff;
+  padding: 1rem;
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.categoriesTitle {
+  color: #000;
+  background-color: rgb(255, 255, 255);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 0.5rem;
+}
+
+.categoriesItems {
+  overflow-y: scroll;
+  padding: 1rem;
+}
+
+.categoriesItems::-webkit-scrollbar {
+  display: none;
 }

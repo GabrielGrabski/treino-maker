@@ -4,14 +4,13 @@ import { useNavigate } from "react-router-dom";
 
 export const Login = () => {
   const navigate = useNavigate();
-  const emailRef = useRef(null);
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [validForm, setValidForm] = useState(true);
 
   useEffect(() => {
-    localStorage.clear();
+    
   }, []);
 
   const handleLogin = (e: FormEvent) => {
@@ -44,7 +43,7 @@ export const Login = () => {
             <input
               type="email"
               placeholder="E-mail"
-              className={!validForm ? styles.invalid : ""}
+              className={`${(!validForm ? styles.invalid : "")} ${styles.input}`}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -54,7 +53,7 @@ export const Login = () => {
               type="password"
               placeholder="Senha"
               value={password}
-              className={!validForm ? styles.invalid : ""}
+              className={`${(!validForm ? styles.invalid : "")} ${styles.input}`}
               onChange={(e) => setPassword(e.target.value)}
             />
           </div>
@@ -65,7 +64,7 @@ export const Login = () => {
             </span>
           )}
 
-          <button className={styles.btnLogin} type="submit">
+          <button className={`${styles.btnLogin} ${styles.button}`} type="submit">
             Entrar
           </button>
         </form>

@@ -1,14 +1,21 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import styles from "./header.module.css";
 import { CiLogin } from "react-icons/ci";
 import { useContext, useEffect } from "react";
 import { AuthContext } from "../../contexts/auth/AuthContext";
 import { MdAccountCircle } from "react-icons/md";
+import { PiSignOut } from "react-icons/pi";
 
 export const Header = () => {
-  const { isAuthenticated } = useContext(AuthContext);
+  const navigate = useNavigate();
 
-  useEffect(() => {}, []);
+  const { isAuthenticated, setAuthenticated } = useContext(AuthContext);
+
+  const signOut = () => {
+    localStorage.clear();
+    setAuthenticated(false);
+    navigate("/login");
+  };
 
   return (
     <header>
@@ -24,10 +31,10 @@ export const Header = () => {
         <nav>
           {!isAuthenticated && (
             <>
-              <Link className={styles.link} to="/login">
+              <Link className={`${styles.link} ${styles.navLink}`} to="/login">
                 Entrar
+                <CiLogin color="#fff" size={24} />
               </Link>
-              <CiLogin color="#fff" size={24} />
             </>
           )}
 
@@ -37,8 +44,17 @@ export const Header = () => {
                 className={`${styles.link} ${styles.navLink}`}
                 to="/account"
               >
-                Conta
+                Academia Espaço Fit
                 <MdAccountCircle color="#fff" size={20} />
+              </Link>
+
+              <Link
+                onClick={signOut}
+                className={`${styles.link} ${styles.navLink}`}
+                to="/login"
+              >
+                Logout
+                <PiSignOut color="#fff" size={20} />
               </Link>
             </>
           )}
